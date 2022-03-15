@@ -1,0 +1,12 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: <%= ENV.fetch("DATABASE_MAX_POOL") { 128 } %>
+  host: <%= ENV["DATABASE_HOST"] %>
+  username: <%= ENV["DATABASE_USERNAME"] %>
+  password: <%= ENV["DATABASE_PASSWORD"] %>
+  checkout_timeout: 20
+
+development:
+  <<: *default
+  database: test_rds_upgrade_development
