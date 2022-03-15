@@ -5,7 +5,8 @@ default: &default
   host: <%= ENV["DATABASE_HOST"] %>
   username: <%= ENV["DATABASE_USERNAME"] %>
   password: <%= ENV["DATABASE_PASSWORD"] %>
-  checkout_timeout: 20
+  connect_timeout: 10
+  read_timeout: 10
 
 development:
   <<: *default
