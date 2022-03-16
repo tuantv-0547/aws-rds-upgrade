@@ -31,6 +31,6 @@ namespace :db do
       end
     end
 
-    puts "Downgrade duration: #{downtime_end_at - downtime_start_at}s"
+    puts "Downtime duration: #{downtime_end_at - downtime_start_at}s"
   end
 end
