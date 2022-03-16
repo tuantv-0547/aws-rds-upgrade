@@ -107,7 +107,7 @@ aws rds describe-db-snapshots \
 
 ## 4. Upgrade database
 
-* Firstly, please ensure that you run `rake db:ping` in another console tab. We
+* Firstly, please ensure that you run `rake db:ping` in Rails tab. We
   use this rake task to calculate downtime duration when upgrading MySQL.
 
 
